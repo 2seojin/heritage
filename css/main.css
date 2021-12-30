@@ -563,6 +563,13 @@ img {width: 100%;}
         margin: 0;
         padding: 0 5px;
     }
+    /*활성화된 슬라이드에만 글자가 보임*/
+    section.s3 .slick-slide.slick-active h3, 
+    section.s3 .slick-slide.slick-active p,
+    section.s3 .slick-slide.slick-active a {
+        opacity: 1;
+    }
+
     section.s3 .center h1 {
         color: #333;
         font-weight: bold;
@@ -573,11 +580,15 @@ img {width: 100%;}
         margin-top: 4vw;
         font-size: 4.5vw;
         font-weight: bold;
+        opacity: 0;
+        transition: all 0.3s;
     }
     section.s3 p {
         margin-top: 0.6vw;
         font-size: 3.2vw;
         font-weight: 500;
+        opacity: 0;
+        transition: all 0.3s;
     }
     section.s3 a {
         padding: 2vw 1.5vw;
@@ -589,6 +600,8 @@ img {width: 100%;}
         font-weight: 600;
         margin-top: 6vw;
         margin-bottom: 2vw;
+        opacity: 0;
+        transition: all 0.3s;
     }
     section.s4 .zone {
         height: 50vh;
