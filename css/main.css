@@ -8,8 +8,9 @@ li {list-style: none;}
 header,section, footer {width: 100%; float: left; box-sizing: border-box;}
 img {width: 100%;}
 
+
 /*pc ver.*/
-@media screen and (min-width:480px){
+/* @media screen and (min-width:480px){ */
     .center {
         width: 1520px;
         margin: 0 auto;
@@ -18,7 +19,7 @@ img {width: 100%;}
         justify-content: space-between;     /*객체 간의 간격 동일하게*/
     }
     .logo {
-        width: 210px;
+        width: 11vw;
         margin-top: 1vw;
     }
     .h_right {
@@ -50,6 +51,9 @@ img {width: 100%;}
         font-weight: 600;
         position: relative;
     }
+    .h_right nav > ul > li > a:hover {
+        color:#053863;
+    }
     /*주메뉴에 마우스오버시 밑줄 애니메이션*/
     .h_right nav > ul > li > a:after {
         content: "";
@@ -60,7 +64,7 @@ img {width: 100%;}
         bottom: 0;
         margin-bottom: 12px;
         transition: all 0.3s;
-        background-color: #00305b;
+        background-color: #053863;
     }
     .h_right nav > ul > li:hover > a:after {
         width: 100%;
@@ -84,7 +88,7 @@ img {width: 100%;}
         white-space: nowrap;
     }
     .h_right nav .sub li a:hover {
-        color: #7e0000;
+        color: #e4022e;
         font-weight: bold;
     }
     /*메인메뉴에 마우스오버시 서브 메뉴 나옴*/
@@ -94,306 +98,585 @@ img {width: 100%;}
     .h_right .menu {
         margin-top: 1.6vw;
     }
-}   
+
+
+    /*moblie, pc 모두 적용 - bootstrap*/
+    section.s1 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    section.s1 .row .col-sm-12 {
+        height: 150vh;
+        background-image: url(../img/main0.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    section.s2 .center {
+        margin: 8vw auto;              /*위아래, 좌우*/
+    }
+    section.s2 div div div div {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        color: #fff;
+        text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+        box-sizing: border-box;
+        letter-spacing: 0.6px;
+        margin: 0.1vw;
+    }
+    section.s2 div div div h3 {
+        font-size: 1.4vw;
+        font-weight: 500;
+    }
+    section.s2 div div div p {
+        font-size: 1vw;
+        font-weight: 400;
+        display: block;
+    }
+    section.s2 .box0 {
+        background-image: url(../img/grid-gyeongbok.jpg);
+        height: 31vw;
+        width: 39vw;
+        padding-top: 26vw;
+        padding-left: 2vw;
+    }
+    section.s2 .box_right {
+        display: flex;
+        flex-flow: row wrap;                /*줄바꿈 허용*/
+        padding-left: 0.4vw;
+    }
+    section.s2 .box1 {
+        background-image: url(../img/grid-changdeock.jpg);
+        width: 18vw;
+        height: 15vw;
+        padding-top: 10.2vw;
+        padding-left: 1.4vw;
+        margin-right: 0.9vw;
+        margin-bottom: 0.9vw;
+    }
+    section.s2 .box2 {
+        background-image: url(../img/grid-deocksu.jpg);
+        width: 18vw;
+        height: 15vw;
+        padding-top: 10.2vw;
+        padding-left: 1.4vw;
+    }
+    section.s2 .box3 {
+        background-image: url(../img/grid-changgyeoung.jpg);
+        width: 18vw;
+        height: 15vw;
+        padding-top: 10.2vw;
+        padding-left: 1.4vw;
+        margin-right: 0.9vw;
+    }
+    section.s2 .box4 {
+        background-image: url(../img/grid-jongmyo.jpg);
+        width: 18vw;
+        height: 15vw;
+        padding-top: 10.2vw;
+        padding-left: 1.4vw;
+    }
+    section.s3 {
+        background-color: #efefef;
+    }
+    section.s3 .center {
+        width: 1640px;
+        flex-flow: column nowrap;
+        margin: 6vw auto;    
+    }
+    section.s3 .center h1 {
+        color: #333;
+        font-weight: bold;
+        font-size: 2.2vw;
+        margin-left: 60px;
+    }
+    section.s3 .list {
+        margin-top: 4vw;
+    }
+    section.s3 .list ul {
+        padding: 0;
+    }
+    /* section.s3 .list ul .slick-track {
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 0;
+        justify-content: space-between;
+    } */
+    section.s3 .list ul .slick-slide {
+        margin: 0 60px;
+    }
+    section.s3 h3 {
+        margin-top: 2.4vw;
+        font-size: 1.3vw;
+        font-weight: bold;
+    }
+    section.s3 p {
+        margin-top: 0.6vw;
+        font-size: 0.9vw;
+        font-weight: 500;
+    }
+    section.s3 a {
+        padding: 0.5vw 1vw;
+        border: 1px solid #333;
+        width: 6vw;
+        color: #333;
+        text-align: center;
+        font-weight: 600;
+        margin-top: 2.4vw;
+    }
+    section.s3 a:hover {
+        background-color: #333;
+        color: #fff;
+    }
+    section.s4 .zone {
+        position: relative;             /*자식객체 겹침*/
+        width: 100%;
+        height: 100vh;
+    }
+    section.s4 .zone .zone_list {
+        position: absolute;             /*자식 div 3개 겹칠 때 위치 기준이 됨, .zone_btn과 겹침*/
+        width: 100%;
+        height: 100vh;
+        background-color: #000;
+    }
+    section.s4 .zone .zone_list div {
+        position: absolute;             /*3개 div 겹침*/
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: #fff;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+        box-sizing: border-box;
+        padding: 55vh 0 0 10vw;
+    }
+    section.s4 .zone .zone_list div span {
+        font-size: 1vw;
+        font-weight: 500;
+        color:#93e280;
+    }
+    section.s4 .zone .zone_list div h1 {
+        font-size: 5vw;
+        font-weight: 400;
+        margin-top: 0.8vw;
+    }
+    section.s4 .zone .zone_list div p {
+        margin-top: 2.5vw;
+        font-size: 1.1vw;
+        font-weight: 300;
+        display: block;
+    }
+    section.s4 .zone .zone_list .zone1 {
+        background-image: url(../img/slide1.jpg);
+    }
+    section.s4 .zone .zone_list .zone2 {
+        background-image: url(../img/slide2.jpg);
+    }
+    section.s4 .zone .zone_list .zone3 {
+        background-image: url(../img/slide3.jpg);
+    }
+    section.s4 .zone .zone_btn {
+        position: absolute;
+        right: 10vw;
+        top: 10vw;
+    }
+    section.s4 .zone .zone_btn ul li {
+        margin-bottom: 4vw;
+        text-align: center;
+    }
+    section.s4 .zone .zone_btn ul li h1 {
+        background-color: rgba(204, 204, 204, 0.5);
+        border: 3px solid rgba(255, 255, 255);
+        border-radius: 50%;
+        padding: 1.2vw;
+        font-size: 3vw;
+        font-weight: 600;
+        color: #fff;
+    }
+    section.s4 .zone .zone_btn ul li a {
+        color: #fff;
+        font-weight: 400;
+        font-size: 0.8vw;
+        position: relative;
+    }
+    section.s4 .zone .zone_btn ul li a:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        left: 0%;
+        bottom: 0;
+        margin-bottom: -0.4vw;
+        transition: all 0.3s;
+        background-color: #fff;
+    }
+    section.s4 .zone .zone_btn ul li:hover a:after {
+        width: 100%;
+        left: 0;
+    }
+    /*버튼에 마우스오버시 색 변경*/
+    section.s4 .zone .zone_btn ul h1:hover {
+        color: #666;
+        background-color: #fff;
+        border: 3px solid #fff;    
+    }
+    section.s5 .center {
+        margin: 6vw auto;
+    }
+    section.s5 .center .row {
+        width: 100%;
+    }
+    section.s5 .center .row > div {
+        width: 50%;
+        padding: 0;
+    }
+    section.s5 .center .row > div > div {
+        width: 90%;
+        margin: 0 auto;
+    }
+    section.s5 .center div .no_title {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    section.s5 .center div h3 {
+        font-size: 1.4vw;
+        font-weight: 600;
+        color: #00305b;
+    }
+    section.s5 .center div a {
+        color: #999;
+        font-weight: 600;
+    }
+    section.s5 .center .no_list {
+        width: 100%;
+        margin-top: 0.6vw;
+        border-top: 2px solid #111;
+    }
+    section.s5 .center .no_list ul {
+        padding: 0;
+    }
+    section.s5 .center .no_list ul li {
+        padding: 1vw 0 0;
+        border-bottom: 1px solid #333;
+    }
+    section.s5 .center .no_list ul li a {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        color: #333;
+        font-size: 0.9vw;
+        box-sizing: border-box;
+        padding: 0 0.5vw;
+    }
+    section.s5 .center .no_list ul li:hover {
+        background-color: #efefef;
+    }
+    footer {
+        background-color: #111;
+        padding: 3vw 0;
+    }
+    footer .center .row {
+        width: 100%;
+    }
+    footer .f_logo {
+        width: 10vw;
+    }
+    footer address {
+        color: #888;
+        font-size: 0.7vw;
+        margin-left: 3vw;
+        line-height: 1.8vw;
+    }
+    footer .f_right {
+        float: right;
+        width: 100%;
+    }
+    footer .info {
+        float: right;
+    }
+    footer .f_right ul {
+        display: flex;
+
+    }
+    footer .f_right ul li a {
+        color: #888;
+        font-size: 0.7vw;
+        padding-left: 0.5vw;
+    }
+    footer .f_right ul li a:after {
+        content: "｜";
+        color: #888;
+        margin-left: 0.5vw;
+    }
+    footer .f_right ul li:last-child a{
+        color:darkseagreen;
+    }
+    footer .f_right ul li:last-child a:after {
+        content: "";
+        margin-left: 0;
+    }
+    footer .f_right p {
+        text-align: right;
+        color: #888;
+        font-size: 0.7vw;
+        width: 100%;
+        clear: both;                    /*float:right 해제*/
+    }
+/* } */
+/* sitemap */
+.sitemap {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color:#00305b;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 1.6vw 9.7vw 5vw;
+    z-index: 50;
+    box-sizing: border-box;
+    display: none;
+}
+.sitemap .site_title {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.sitemap .site_title h1 {
+    font-size: 1.2vw;
+    font-weight: 600;
+    letter-spacing: 0.2vw;
+    color: #fff;
+}
+.sitemap .site_title .close {
+    width: 1.5vw;
+    cursor: pointer;
+}
+.sitemap .site_menu {
+    margin-top: 7vw;
+}
+.sitemap .site_menu > ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0;
+}
+.sitemap .site_menu > ul > li span {
+    color: #93e280;
+    font-size: 0.8vw;
+    font-weight: 600;
+}
+.sitemap .site_menu > ul > li > a {
+    font-size: 1.8vw;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.4);
+    padding: 2vw 0;
+}
+.sitemap .site_menu .sub {
+    padding: 0;
+}
+.sitemap .site_menu .sub li a {
+    color: #fff;
+    padding: 0.8vw 0;
+    font-weight: 500;
+    position: relative;
+}
+.sitemap .site_menu .sub li a:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    left: 50%;
+    bottom: 0;
+    margin-bottom: 0.6vw;
+    transition: all 0.3s;
+    background-color: #fff;
+}
+.sitemap .site_menu .sub li:hover a:after {
+    width: 100%;
+    left: 0;
+}
 
 
 /*moblie ver.*/
 @media screen and (max-width:480px){
     .center {width: 100%;}
-}
-
-/*moblie, pc 모두 적용 - bootstrap*/
-section.s1 {
-    width: 100%;
-    /* height: 100vh; */
-    margin: 0 auto;
-}
-section.s2 .center {
-    margin: 8vw auto;              /*위아래, 좌우*/
-}
-section.s2 div div div div {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    color: #fff;
-    text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
-    box-sizing: border-box;
-    letter-spacing: 0.6px;
-    margin: 0.1vw;
-}
-section.s2 div div div h3 {
-    font-size: 1.4vw;
-    font-weight: 500;
-}
-section.s2 div div div p {
-    font-size: 1vw;
-    font-weight: 400;
-}
-section.s2 .box0 {
-    background-image: url(../img/grid-gyeongbok.jpg);
-    height: 31vw;
-    width: 39vw;
-    padding-top: 26vw;
-    padding-left: 2vw;
-}
-section.s2 .box_right {
-    display: flex;
-    flex-flow: row wrap;                /*줄바꿈 허용*/
-    padding-left: 0.4vw;
-}
-section.s2 .box1 {
-    background-image: url(../img/grid-changdeock.jpg);
-    width: 18vw;
-    height: 15vw;
-    padding-top: 10.2vw;
-    padding-left: 1.4vw;
-    margin-right: 0.9vw;
-    margin-bottom: 0.9vw;
-}
-section.s2 .box2 {
-    background-image: url(../img/grid-deocksu.jpg);
-    width: 18vw;
-    height: 15vw;
-    padding-top: 10.2vw;
-    padding-left: 1.4vw;
-}
-section.s2 .box3 {
-    background-image: url(../img/grid-changgyeoung.jpg);
-    width: 18vw;
-    height: 15vw;
-    padding-top: 10.2vw;
-    padding-left: 1.4vw;
-    margin-right: 0.9vw;
-}
-section.s2 .box4 {
-    background-image: url(../img/grid-jongmyo.jpg);
-    width: 18vw;
-    height: 15vw;
-    padding-top: 10.2vw;
-    padding-left: 1.4vw;
-}
-section.s3 {
-    background-color: #efefef;
-}
-section.s3 .center {
-    flex-flow: column nowrap;
-    margin: 6vw auto;    
-}
-section.s3 .center h1 {
-    color: #333;
-    font-weight: bold;
-    font-size: 2.2vw;
-}
-section.s3 .list {
-    margin-top: 4vw;
-}
-section.s3 .list ul {
-    display: flex;
-    flex-flow: row nowrap;
-    padding: 0;
-    justify-content: space-between;
-}
-section.s3 h3 {
-    margin-top: 2.4vw;
-    font-size: 1.3vw;
-    font-weight: bold;
-}
-section.s3 p {
-    margin-top: 0.6vw;
-    font-size: 0.9vw;
-    font-weight: 500;
-}
-section.s3 a {
-    padding: 0.5vw 1vw;
-    border: 1px solid #333;
-    width: 6vw;
-    color: #333;
-    text-align: center;
-    font-weight: 600;
-    margin-top: 2.4vw;
-}
-section.s3 a:hover {
-    background-color: #333;
-    color: #fff;
-}
-section.s4 .zone {
-    position: relative;             /*자식객체 겹침*/
-    width: 100%;
-    height: 100vh;
-}
-section.s4 .zone .zone_list {
-    position: absolute;             /*자식 div 3개 겹칠 때 위치 기준이 됨, .zone_btn과 겹침*/
-    width: 100%;
-    height: 100vh;
-    background-color: #000;
-}
-section.s4 .zone .zone_list div {
-    position: absolute;             /*3개 div 겹침*/
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #fff;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
-    box-sizing: border-box;
-    padding: 55vh 0 0 10vw;
-}
-section.s4 .zone .zone_list div span {
-    font-size: 1vw;
-    font-weight: 500;
-    color:#93e280;
-}
-section.s4 .zone .zone_list div h1 {
-    font-size: 5vw;
-    font-weight: 400;
-    margin-top: 0.8vw;
-}
-section.s4 .zone .zone_list div p {
-    margin-top: 2.5vw;
-    font-size: 1.1vw;
-    font-weight: 300;
-}
-section.s4 .zone .zone_list .zone1 {
-    background-image: url(../img/slide1.jpg);
-}
-section.s4 .zone .zone_list .zone2 {
-    background-image: url(../img/slide2.jpg);
-}
-section.s4 .zone .zone_list .zone3 {
-    background-image: url(../img/slide3.jpg);
-}
-section.s4 .zone .zone_btn {
-    position: absolute;
-    right: 10vw;
-    top: 10vw;
-}
-section.s4 .zone .zone_btn ul li {
-    margin-bottom: 4vw;
-    text-align: center;
-}
-section.s4 .zone .zone_btn ul li h1 {
-    background-color: rgba(204, 204, 204, 0.5);
-    border: 3px solid rgba(255, 255, 255);
-    border-radius: 50%;
-    padding: 1.2vw;
-    font-size: 3vw;
-    font-weight: 600;
-    color: #fff;
-}
-section.s4 .zone .zone_btn ul li a {
-    color: #fff;
-    font-weight: 400;
-    font-size: 0.8vw;
-}
-/*버튼에 마우스오버시 색 변경*/
-section.s4 .zone .zone_btn ul h1:hover {
-    color: #666;
-    background-color: #fff;
-    border: 3px solid #fff;    
-}
-section.s5 .center {
-    margin: 6vw auto;
-}
-section.s5 .center .row {
-    width: 100%;
-}
-section.s5 .center .row > div {
-    width: 50%;
-    padding: 0;
-}
-section.s5 .center .row > div > div {
-    width: 90%;
-    margin: 0 auto;
-}
-section.s5 .center div .no_title {
-    width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-}
-section.s5 .center div h3 {
-    font-size: 1.4vw;
-    font-weight: 600;
-    color: #00305b;
-}
-section.s5 .center div a {
-    color: #999;
-    font-weight: 600;
-}
-section.s5 .center .no_list {
-    width: 100%;
-    margin-top: 0.6vw;
-    border-top: 2px solid #111;
-}
-section.s5 .center .no_list ul {
-    padding: 0;
-}
-section.s5 .center .no_list ul li {
-    padding: 1vw 0 0;
-    border-bottom: 1px solid #333;
-}
-section.s5 .center .no_list ul li a {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    color: #333;
-    font-size: 0.9vw;
-    box-sizing: border-box;
-    padding: 0 0.5vw;
-}
-section.s5 .center .no_list ul li:hover {
-    background-color: #efefef;
-}
-footer {
-    background-color: #111;
-    padding: 3vw 0;
-}
-footer .center .row {
-    width: 100%;
-}
-footer .f_logo {
-    width: 10vw;
-}
-footer address {
-    color: #888;
-    font-size: 0.7vw;
-    margin-left: 3vw;
-    line-height: 1.8vw;
-}
-footer .f_right {
-    float: right;
-    width: 100%;
-}
-footer .info {
-    float: right;
-}
-footer .f_right ul {
-    display: flex;
-
-}
-footer .f_right ul li a {
-    color: #888;
-    font-size: 0.7vw;
-    padding-left: 0.5vw;
-}
-footer .f_right ul li a:after {
-    content: "｜";
-    color: #888;
-    margin-left: 0.5vw;
-}
-footer .f_right ul li:last-child a{
-    color:darkseagreen;
-}
-footer .f_right ul li:last-child a:after {
-    content: "";
-    margin-left: 0;
-}
-footer .f_right p {
-    text-align: right;
-    color: #888;
-    font-size: 0.7vw;
-    width: 100%;
-    clear: both;
+    .logo {width: 36vw; margin: 3vw 5vw;}
+    .h_right {width: auto;}
+    .h_right nav {display: none;}
+    .h_right .menu {
+        margin-top: 3vw;
+        margin-right: 3vw;
+    }
+    section.s1 .row .col-sm-12 {
+        height: 90vh;
+        background-image: url(../img/moblie-main.jpg);
+    }
+    section.s2 .box0 {
+        height: 70vw;
+        width: 96.4%;
+        margin: 0 auto;
+        padding-top: 58vw;
+        padding-left: 6vw;
+    }
+    section.s2 .box_right {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 1vw;
+        margin-left: 3vw;
+    }
+    section.s2 .box_right div {
+        height: 40vw;
+        width: 46%;
+        margin: 1vw;
+        padding-top: 30vw;
+        padding-left: 4vw;
+    }
+    section.s2 div div div div h3 {
+        font-size: 5vw;
+    }
+    section.s2 div div div div p {
+        display: none;
+    }
+    section.s3 .center {
+        width: 100%;
+        flex-flow: column nowrap;
+        margin: 6vw auto;
+    }
+    section.s3 .list .slick-slide {
+        padding: 0 15px;
+    }
+    section.s4 .zone {
+        height: 60vh;
+    }
+    section.s4 .zone .zone_list {
+        height: 60vh;
+    }
+    section.s4 .zone .zone_list div {
+        height: 60vh;
+        padding: 25.5vh 0 0 10vw;
+    }
+    section.s4 .zone .zone_list div span {
+        font-size: 3vw;
+        font-weight: 500;
+        color:#93e280;
+    }
+    section.s4 .zone .zone_list div h1 {
+        font-size: 8vw;
+        font-weight: 400;
+        margin-top: 0.8vw;
+    }
+    section.s4 .zone .zone_list div p {
+        display: none;
+    }
+    section.s4 .zone .zone_btn {
+        position: absolute;
+        right: 5vw;
+        top: 3vw;
+    }
+    section.s4 .zone .zone_btn ul li {
+        margin-bottom: 6vw;
+        text-align: center;
+    }
+    section.s4 .zone .zone_btn ul li h1 {
+        background-color: rgba(204, 204, 204, 0.5);
+        border: 3px solid rgba(255, 255, 255);
+        border-radius: 50%;
+        padding: 5vw;
+        font-size: 5vw;
+        font-weight: 600;
+        color: #fff;
+    }
+    section.s4 .zone .zone_btn ul li a {
+        color: #fff;
+        font-weight: 400;
+        font-size: 2.5vw;
+        position: relative;
+    }
+    section.s5 .center .row > div {
+        width: 100%;
+        margin-top: 8vw;
+    }
+    section.s5 .center div h3 {
+        font-size: 5vw;
+    }
+    section.s5 .center div a {
+        color: #999;
+        font-weight: 600;
+        font-size: 3vw;
+        margin-top: 2vw;
+    }
+    section.s5 .center .no_list ul li a {
+        font-size: 3vw;
+    }
+    footer {
+        padding: 7vw 0;
+    }
+    footer .row {margin: 0;}
+    footer .f_logo {
+        width: 40vw;
+    }
+    footer address {
+        margin: 0;
+        margin-top: 4vw;
+        font-size: 2.8vw;
+        font-weight: 500;
+        line-height: 5vw;
+    }
+    footer .f_right {
+        margin-top: 3vw;
+    }
+    footer .info {
+        float: left;
+    }
+    footer .info ul {
+        padding: 0;
+    }
+    footer .f_right ul li a {
+        font-size: 2.5vw;
+        font-weight: 600;
+    }
+    footer .f_right ul li a:after {
+        margin-left: 2vw;
+    }
+    footer .f_right p {
+        font-size: 2vw;
+        text-align: left;
+    }
+    .sitemap {
+        padding: 4vw 2vw 0 6vw;
+    }
+    .sitemap .site_title h1 {
+        font-size: 5vw;
+    }
+    .sitemap .site_title .close {
+        width: 6vw;
+    }
+    .sitemap .site_menu {
+        margin-top: 16vw;
+    }
+    .sitemap .site_menu > ul {
+        flex-flow: column nowrap;
+    }
+    .sitemap .site_menu > ul > li span {
+        display: none;
+    }
+    .sitemap .site_menu > ul > li > a {
+        font-size: 6vw;
+        text-align: center;
+    }
+    .sitemap .site_menu .sub {
+        display: none;
+        padding: 4vw;
+    }
+    .sitemap .site_menu .sub li a {
+        text-align: center;
+        padding: 2vw;
+    }
 }
