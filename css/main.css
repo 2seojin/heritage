@@ -523,7 +523,7 @@ img {width: 100%;}
         width: 96.4%;
         margin: 0 auto;
         padding-top: 58vw;
-        padding-left: 6vw;
+        padding-left: 5vw;
     }
     section.s2 .box_right {
         width: 100%;
@@ -549,18 +549,45 @@ img {width: 100%;}
         flex-flow: column nowrap;
         margin: 6vw auto;
     }
+    section.s3 .center h1 {
+        color: #333;
+        font-weight: bold;
+        font-size: 7vw;
+        margin-left: 74px;
+        margin-top: 3vw;
+    }
     section.s3 .list .slick-slide {
         padding: 0 15px;
     }
+    section.s3 h3 {
+        margin-top: 4vw;
+        font-size: 5vw;
+        font-weight: bold;
+    }
+    section.s3 p {
+        margin-top: 0.6vw;
+        font-size: 3.2vw;
+        font-weight: 500;
+    }
+    section.s3 a {
+        padding: 2vw 1.5vw;
+        border: 1px solid #333;
+        width: 20vw;
+        color: #333;
+        text-align: center;
+        font-size: 3vw;
+        font-weight: 600;
+        margin-top: 6vw;
+    }
     section.s4 .zone {
-        height: 60vh;
+        height: 50vh;
     }
     section.s4 .zone .zone_list {
-        height: 60vh;
+        height: 50vh;
     }
     section.s4 .zone .zone_list div {
-        height: 60vh;
-        padding: 25.5vh 0 0 10vw;
+        height: 50vh;
+        padding: 5vh 0 0 10vw;
     }
     section.s4 .zone .zone_list div span {
         font-size: 3vw;
@@ -577,12 +604,16 @@ img {width: 100%;}
     }
     section.s4 .zone .zone_btn {
         position: absolute;
-        right: 5vw;
-        top: 3vw;
+        top: 60vw;
+        left: 4vw;
     }
     section.s4 .zone .zone_btn ul li {
-        margin-bottom: 6vw;
         text-align: center;
+        float: left;
+        margin-right: 10vw;
+    }
+    section.s4 .zone .zone_btn ul li:last-child {
+        margin-right: 0;
     }
     section.s4 .zone .zone_btn ul li h1 {
         background-color: rgba(204, 204, 204, 0.5);
@@ -602,6 +633,7 @@ img {width: 100%;}
     section.s5 .center .row > div {
         width: 100%;
         margin-top: 8vw;
+        margin-left: 3vw;
     }
     section.s5 .center div h3 {
         font-size: 5vw;
