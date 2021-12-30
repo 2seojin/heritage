@@ -46,30 +46,32 @@ $(document).ready(function(){
     //moblie ver. sitemap
 
     //resize(): 브라우저의 크기가 변하는 것을 감지하는 이벤트
-    $(window).resize(function(){
-    //접속한 장치의 가로길이를 인식해서 device변수에 저장
-    var device=$(window).width();
-    //만약 접속한 장치의 가로길이가 480이하라면 아코디언메뉴 실행
-    if(device <= 480) {
-        $('.sitemap .site_menu > ul > li').click(function(){
-            //만약 클릭한 메뉴에 active가 없다면
-            if($(this).attr('class') != 'active'){
-                //모든 서브메뉴는 들어감
-                $('.site_menu .sub').stop().slideUp();
-                //클릭한 메뉴의 서브메뉴만 나옴
-                $(this).find('.sub').stop().slideDown();
-                //모든 메뉴에서 active 제거
-                $('.site_menu ul li').removeClass('active');
-                //클릭한 메뉴에 active 클래스 설정
-                $(this).addClass('active');
-            //클릭한 메뉴에 active가 있다면
-            }else{
-                //클릭한 메뉴의 서브메뉴 들어감
-                $(this).find('.sub').stop().slideUp();
-                //클릭한 메뉴에서 active 제거
-                $(this).removeClass('active');
-            }
-        });
-    }
-});
+    //load(): 브라우저가 실행되면 발생하는 이벤트
+    //on(): 객체에 이벤트를 2개 이상 설정할 때 사용함
+    $(window).on('load resize', function(){
+        //접속한 장치의 가로길이를 인식해서 device변수에 저장
+        var device=$(window).width();
+        //만약 접속한 장치의 가로길이가 480이하라면 아코디언메뉴 실행
+        if(device <= 480) {
+            $('.sitemap .site_menu > ul > li').click(function(){
+                //만약 클릭한 메뉴에 active가 없다면
+                if($(this).attr('class') != 'active'){
+                    //모든 서브메뉴는 들어감
+                    $('.site_menu .sub').stop().slideUp();
+                    //클릭한 메뉴의 서브메뉴만 나옴
+                    $(this).find('.sub').stop().slideDown();
+                    //모든 메뉴에서 active 제거
+                    $('.site_menu ul li').removeClass('active');
+                    //클릭한 메뉴에 active 클래스 설정
+                    $(this).addClass('active');
+                //클릭한 메뉴에 active가 있다면
+                }else{
+                    //클릭한 메뉴의 서브메뉴 들어감
+                    $(this).find('.sub').stop().slideUp();
+                    //클릭한 메뉴에서 active 제거
+                    $(this).removeClass('active');
+                }
+            });
+        }
+    });
 });
