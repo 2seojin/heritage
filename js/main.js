@@ -42,7 +42,8 @@ $(document).ready(function(){
                 {
                 slidesToShow:1,         /*한번에 1개씩 보임*/
                 slidesToScroll:1,       /*1개씩 이동시킴*/
-                infinite:true           /*무한반복*/
+                infinite:true,           /*무한반복*/
+                centerPadding: '5px'
             }            
         }]
     });
