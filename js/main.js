@@ -15,6 +15,10 @@ $(document).ready(function(){
         //인덱스번호에 해당하는 배경이미지만 보임
         $('.zone_list div').eq(idx).stop().fadeIn();
     })
+    //.zone_btn의 번틀 클릭시 맨 위로 올라가는 것 방지함
+    $('.zone_btn ul li a').click(function(e){
+        e.preventDefault();
+    });
 
     //sitemap
     //메뉴 버튼을 클릭하면 사이트맵 나옴
