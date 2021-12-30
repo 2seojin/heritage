@@ -502,7 +502,10 @@ img {width: 100%;}
     width: 100%;
     left: 0;
 }
-
+/*tablet ver.*/
+@media screen and (min-width:1024px) {
+    
+}
 
 /*moblie ver.*/
 @media screen and (max-width:480px){
@@ -569,7 +572,6 @@ img {width: 100%;}
     section.s3 .slick-slide.slick-active a {
         opacity: 1;
     }
-
     section.s3 .center h1 {
         color: #333;
         font-weight: bold;
