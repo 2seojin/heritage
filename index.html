@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <!--부트스트랩 css cdn-->
+    <!--slick slider css cdn-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!--bootstrap css cdn-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!--부트스트랩 js cdn-->
+    <!--bootstrap js cdn-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <title>국가문화유산포털</title>
@@ -17,6 +19,8 @@
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <!--jquery 연결-->
     <script src="js/jquery-3.6.0.js"></script>
+    <!--slick slider js cdn-->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!--외부 js 연결-->
     <script src="js/main.js"></script>
 </head>
@@ -104,9 +108,7 @@
         </header>
         <section class="s1">
             <div class="row">
-                <div class="col-sm-12">
-                    <img src="img/main0.jpg" alt="메인비주얼">
-                </div>
+                <div class="col-sm-12"></div>
             </div>
         </section>
         <section class="s2">
@@ -140,20 +142,20 @@
             <div class="center">
                 <h1>간행물</h1>
                 <div class="list">
-                    <ul>
-                        <li>
+                    <ul class="slider">
+                        <li class="slick-slide">
                             <img src="img/book1.jpg" alt="해양출수 고선박 보존처리">
                             <h3>해양출수 고선박 보존처리</h3>
                             <p>한국 수중문화재 보존처리의 출발</p>
                             <a href="#">MORE +</a>
                         </li>
-                        <li>
+                        <li class="slick-slide">
                             <img src="img/book2.jpg" alt="금석문 탁본 조사보고서">
                             <h3>금석문 탁본 조사보고서</h3>
                             <p>한금석문 유물을 탁본하고 조사한 결과보고서</p>
                             <a href="#">MORE +</a>
                         </li>
-                        <li>
+                        <li class="slick-slide">
                             <img src="img/book3.jpg" alt="인사동 출토유물 공개전">
                             <h3>인사동 출토유물 공개전</h3>
                             <p>세상에 모습을 보인 인사동의 유물</p>
@@ -181,7 +183,7 @@
                     </div>
                     <div class="zone3">
                         <span>유네스코 등재유산</span>
-                        <h1>해인사 대장경판 및 제경판</h1>
+                        <h1>해인사 대장경판</h1>
                         <p>고려대장경판은 세계에서 가장 오래되었을 뿐만 아니라 가장 완벽하게 제작된 불교 대장경판으로 불교대장경의 원본과 같은 역할을 하고 있다.<br>또한 고려대장경판은 중국을 비롯해 인도, 중앙아시아 등지의 경전 등을 집대성하고 있어 역사적 가치가 더욱 높다.</p>
                     </div>
                 </div>
@@ -270,6 +272,83 @@
                 </div>
             </div>
         </footer>
+    </div>
+    <!--햄버거 메뉴 버튼 클릭시 나타나는 사이트맵-->
+    <div class="sitemap">
+        <div class="site_title">
+            <h1>국가문화유산포털</h1>
+            <div class="close"><img src="img/close.png" alt="닫기"></div>
+        </div>
+        <div class="site_menu">
+            <ul>                
+                <li><span>01</span>
+                    <a href="#">문화유산 검색</a>
+                    <ul class="sub">
+                        <li><a href="#">문화재 검색</a></li>
+                        <li><a href="#">기록유산 원문</a></li>
+                        <li><a href="#">간행물</a></li>
+                        <li><a href="#">문화유산연구지식포털</a></li>
+                        <li><a href="#">박물관 소장품</a></li>
+                        <li><a href="#">문화재 정책 Q&A</a></li>
+                        <li><a href="#">용어사전</a></li>
+                    </ul>
+                </li>
+                <li><span>02</span>
+                    <a href="#">궁궐·종묘</a>
+                    <ul class="sub">
+                        <li><a href="#">경복궁</a></li>
+                        <li><a href="#">창덕궁</a></li>
+                        <li><a href="#">덕수궁</a></li>
+                        <li><a href="#">창경궁</a></li>
+                        <li><a href="#">종묘</a></li>
+                        <li><a href="#">궁궐 이야기</a></li>
+                    </ul>
+                </li>
+                <li><span>03</span>
+                    <a href="#">조선왕릉</a>
+                    <ul class="sub">
+                        <li><a href="#">한눈에 보는 조선왕릉</a></li>
+                        <li><a href="#">조선왕실(선원계보)</a></li>
+                        <li><a href="#">그림으로 보는 국장행렬</a></li>
+                    </ul>
+                </li>
+                <li><span>04</span>
+                    <a href="#">기록유산</a>
+                    <ul class="sub">
+                        <li><a href="#">기록유산 알기</a></li>
+                        <li><a href="#">의궤정보</a></li>
+                        <li><a href="#">인장정보</a></li>
+                        <li><a href="#">활자정보</a></li>
+                    </ul>
+                </li>
+                <li><span>05</span>
+                    <a href="#">유네스코 등재유산</a>
+                    <ul class="sub">
+                        <li><a href="#">유네스코 등재유산 소개</a></li>
+                        <li><a href="#">세계유산</a></li>
+                        <li><a href="#">인류무형문화유산</a></li>
+                        <li><a href="#">세계기록유산</a></li>
+                    </ul>
+                </li>
+                <li><span>06</span>
+                    <a href="#">3D 문화유산</a>
+                    <ul class="sub">
+                        <li><a href="#">3D 문화유산 소개</a></li>
+                        <li><a href="#">주제별 3D 문화유산</a></li>
+                        <li><a href="#">3D 문화유산 검색</a></li>
+                    </ul>
+                </li>
+                <li><span>07</span>
+                    <a href="#">문화재청 사진관</a>
+                    <ul class="sub">
+                        <li><a href="#">문화재 행정의 발자취</a></li>
+                        <li><a href="#">우리가 사랑하는 문화유산</a></li>
+                        <li><a href="#">사진.CHA</a></li>
+                        <li><a href="#">전체사진</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
