@@ -554,14 +554,22 @@ img {width: 100%;}
         font-weight: bold;
         font-size: 7vw;
         margin-left: 3vw;
-        margin-top: 3vw;
+        margin-top: 6vw;
     }
-    section.s3 .list .slick-slide {
-        padding: 0 15px;
+    section.s3 .list .slider {
+        padding: 0 30px;
+        margin: 0;
+    }
+    section.s3 .list .slider .slick-list {
+        overflow: visible;
+    }
+    section.s3 .list ul .slick-slide {
+        margin: 0;
+        padding: 0 5px;
     }
     section.s3 h3 {
         margin-top: 4vw;
-        font-size: 5vw;
+        font-size: 4.5vw;
         font-weight: bold;
     }
     section.s3 p {
@@ -578,6 +586,7 @@ img {width: 100%;}
         font-size: 3vw;
         font-weight: 600;
         margin-top: 6vw;
+        margin-bottom: 8vw;
     }
     section.s4 .zone {
         height: 50vh;
