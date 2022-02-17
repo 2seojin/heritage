@@ -106,7 +106,7 @@ img {width: 100%;}
         margin: 0 auto;
     }
     section.s1 .row .col-sm-12 {
-        height: 150vh;
+        height: 1520px;
         background-image: url(../img/main0.jpg);
         background-size: cover;
         background-position: center;
@@ -487,21 +487,6 @@ img {width: 100%;}
     font-weight: 500;
     position: relative;
 }
-.sitemap .site_menu .sub li a:after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 1px;
-    left: 50%;
-    bottom: 0;
-    margin-bottom: 0.6vw;
-    transition: all 0.3s;
-    background-color: #fff;
-}
-.sitemap .site_menu .sub li:hover a:after {
-    width: 100%;
-    left: 0;
-}
 /*tablet ver.*/
 @media screen and (min-width:1024px) {
     
@@ -518,7 +503,7 @@ img {width: 100%;}
         margin-right: 3vw;
     }
     section.s1 .row .col-sm-12 {
-        height: 90vh;
+        height: 600px;
         background-image: url(../img/moblie-main.jpg);
     }
     section.s2 .box0 {
